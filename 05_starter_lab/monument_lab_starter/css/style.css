@@ -154,6 +154,7 @@ header {
 	background-image: url('../images/home_header_bg.jpg');
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	height: 500px;
 	margin-bottom: 48px;
 }
