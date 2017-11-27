@@ -17,6 +17,14 @@ img {
   max-width: 100%;
 }
 
+nav img {
+  max-width: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+
+}
+
 article {
   background-color: #ffffff;
   max-width: 80%;
@@ -55,11 +63,17 @@ P{
 }
 h2 {
   color: #007db8;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  display: block;
+font-size: 4em;
+font-weight: bold;
+
 }
 h3 {
   color: #007db8;
   text-transform: uppercase;
+  font-size: 1em;
+  font-weight:normal;
 }
 h4 {
   color: #007db8;
@@ -67,13 +81,14 @@ h4 {
 }
 a {
 	text-decoration: none;
-	color: Yellow;
+	color: #7a7a7a;
 	font-weight: 600;
 	transition: all .3s ease-in-out;
+
 }
 
 a:hover {
-	color: #44545E;
+	color: #007db8;
 }
 
 /* ----------------------------------------
@@ -100,10 +115,34 @@ article a {
 button:hover,
 article a:hover {
 	background-color: #black;
-	color: green;
+	color: #eeeeee;
 	font-weight: 600;
 }
 
+button,
+header a {
+
+	outline: 0;
+	border: 1px solid #007db8;
+	color: #007db8;
+	padding: 8px 10px;
+	background-color: transparent;
+	border-radius: 0;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1.2px;
+	transition: all .3s ease-in-out;
+
+}
+
+
+button:hover,
+header a:hover {
+	background-color: #black;
+	color: #eeeeee;
+	font-weight: 600;
+}
 
 
 /* ----------------------------------------
@@ -111,32 +150,32 @@ Header
 ------------------------------------------- */
 header {
 	padding-top: 30px;
-	background-image: url("../img/GettyImages-577155315.jpg");
+	background-image: url("../img/111659195.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-  height: 100vh;
-  min-height: 200px;
+  height: 90vh;
+  min-height: 100px;
 	display: flex;
   color: white;
 	flex-direction: column;
 	justify-content: center;
-  max-height: 60%;
-
+  max-height:10%;
 
 }
 
 header h1 {
-  text-align: left;
+  text-align: center;
   margin-left: 200px;
-  font-size: 70px;
-  padding-top: 200px;
+  font-size: 100px;
+  padding-top: 100px;
 }
 
 header h2 {
-  text-align: left;
+  text-align: center;
   margin-left: 200px;
   font-size: 30px;
+  font-style: normal;
 }
 
 nav {
@@ -145,21 +184,22 @@ nav {
   position: fixed;
 	top: 0;
 	z-index: 100;
-	padding: 20px 0;
+	padding-top: 20px;
+  padding-bottom: 20px;
+
 
 }
 
 nav a {
+  text-align: left;
 	font-weight: 600;
 	letter-spacing: 0.75px;
 	padding: 0 30px;
 	text-transform: uppercase;
 }
 
-.hamburger {
-	font-size: 30px;
-	display: none;
-}
+
+
 
 h1 a,
 h1 a:hover,
@@ -175,14 +215,60 @@ Layout
 .gallery-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap:10px;
+	grid-gap:0px;
+  text-align: left;
+  justify-content: center;
+  padding-left: 333px;
+  padding-right:333px;
+  padding-top: 20px;
+  padding-bottom:100px;
+  background-color: #eeeeee;
+
+}
+
+.picture {
+background-image: url("../img/GettyImages-512284863.jpg");
+padding-top: 30px;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+height: 70vh;
+min-height: 100px;
+display: flex;
+color: white;
+flex-direction: column;
+justify-content: center;
+max-height:10%;
+}
+
+.ourcapabilities,
+.gallery-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:5px;
   text-align: left;
   justify-content: center;
   padding-left: 220px;
   padding-right: 220px;
+  background-color: white;
+
+}
+
+
+.header2
+ {
+  text-align: center;
+  justify-content: center;
+  padding-left: 220px;
+  padding-right: 220px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: auto;
   background-color: #eeeeee;
 
 }
+
+
 
 section {
 	padding: 105px 30px;
@@ -196,50 +282,7 @@ img {
 /* ----------------------------------------
 aboutus
 ------------------------------------------- */
-.aboutus {
-	background-color: white;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  text-align: left;
-}
 
-
-.aboutus p {
-	max-width: 780px;
-	margin-left: 20px;
-	margin-right: auto;
-  color: #212121;
-  text-align: left;
-
-}
-
-.aboutus h2 {
-  margin-left: 20px;
-  color: #212121;
-  text-align: left;
-
-}
-
-.aboutus h3 {
-  margin-left: 20px;
-  color: #212121;
-  text-align: left;
-
-}
-
-.aboutus a {
-  margin-left: 20px;
-  color: #007db8;
-  text-align: left;
-
-}
-
-.aboutus img {
-  margin-right: 20px;
-  max-width: 40%;
-  padding-left: 800px;
-
-}
 
 /* ----------------------------------------
 Footer
@@ -251,21 +294,8 @@ footer {
 
 }
 
-footer a {
-	font-size: 30px;
-	padding: 15px;
-	margin-bottom: 30px;
-	display: inline-block;
-	color: #eeeeee;
-}
 
-hr {
-	/*First remove the default ugly border the browser adds! Yuck*/
-	border: none;
-	/* Now add your own border to the top or bottom */
-	border-bottom: 2px solid #44545E;
-	margin: 34px 0 3px;
-}
+
 
 footer input {
 	padding: 11px 10px;
