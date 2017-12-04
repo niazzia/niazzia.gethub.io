@@ -56,17 +56,22 @@ body {
   margin: 0;
   letter-spacing: .02em;
   text-align: center;
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0;
 }
+
+
 
 P{
   text-transform: lowercase;
 }
 h2 {
   color: #007db8;
-  text-transform: lowercase;
+  text-transform: uppercase;
   display: block;
-font-size: 4em;
-font-weight: bold;
+  font-size: 4em;
+  font-weight: bold;
 
 }
 h3 {
@@ -94,6 +99,20 @@ a:hover {
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
+
+button {
+  background-color: #29ABE2;
+  border: none;
+  display: inline-block;
+  margin: 30px 20px 20px;
+  font-size: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+
 button,
 article a {
 	cursor: pointer;
@@ -241,7 +260,29 @@ justify-content: center;
 max-height:10%;
 }
 
-.ourcapabilities,
+.picture2 {
+background-image: url("../img/468839587_super.jpg");
+padding-top: 30px;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+height: 50vh;
+min-height: 100px;
+display: flex;
+color: white;
+flex-direction: column;
+justify-content: center;
+max-height:10%;
+}
+
+.final{
+
+  background-color: #eeeeee;
+}
+
+
+
+.final2,
 .gallery-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -250,7 +291,7 @@ max-height:10%;
   justify-content: center;
   padding-left: 220px;
   padding-right: 220px;
-  background-color: white;
+
 
 }
 
@@ -277,6 +318,18 @@ section {
 
 img {
 	max-width: 100%;
+}
+
+
+.article-grid2,
+.gallery-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+
+section {
+	padding: 105px 30px;
 }
 
 /* ----------------------------------------
@@ -378,3 +431,8 @@ Responsive styles
 		width: 90%;
 		margin: 0 auto 20px auto;
 	}
+
+
+  //////////////////////////////
+
+////////////////////////////////////////////////
