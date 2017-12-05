@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: 'Lato', Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+#boxes {
+  margin: 20px;
+}
+
+#boxes section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+
+}
+
+section article,
+section div {
+  width: 18%;
+  border: 1px solid #eeeeee;
+  padding:10px;
+}
+
+.boring article,
+.boring div {
+  border: 1px solid #8E8E8E;
+}
+
+button {
+  background-color: #007db8;
+  border: none;
+  display: inline-block;
+  margin: 30px 20px 20px;
+  font-size: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+#ux {
+  background-color: #eeeeee;
+}
+
+
+.selected {
+  border: 1px solid #FF31A0;
+}
+
+
+
+
+
+.goofy {
+  color: pink;
+  font-size: 80px;
+}
