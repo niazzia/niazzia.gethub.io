@@ -18,9 +18,7 @@ html {
 }
 
 /* Fix for responsive images */
-img {
-  max-width: 100%;
-}
+
 
 nav img {
   max-width: 10%;
@@ -78,18 +76,33 @@ h2 {
   display: block;
   font-size: 4em;
   font-weight: bold;
-
+  style:
 }
 h3 {
   color: #007db8;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 2em;
   font-weight:bold;
+
 }
 h4 {
   color: #007db8;
   text-transform: uppercase;
+  font-size: 1em;
 }
+
+h5 {
+  color: #4f4f4f;
+  font-size: 2em;
+}
+
+h6 {
+  color: #4F4F4F;
+  font-size: 2em;
+}
+
+
+
 a {
 	text-decoration: none;
 	color: #7a7a7a;
@@ -106,17 +119,6 @@ a:hover {
 Buttons
 ------------------------------------------- */
 
-button {
-  background-color: #29ABE2;
-  border: none;
-  display: inline-block;
-  margin: 30px 20px 20px;
-  font-size: 15px;
-  padding: 8px 20px;
-  cursor: pointer;
-  color: white;
-  outline: none;
-}
 
 
 
@@ -242,15 +244,13 @@ Layout
 .gallery-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-gap:0px;
-  text-align: left;
-  justify-content: center;
+	grid-gap:10px;
+  text-align: center;
   padding-left:100px;
   padding-right:100px;
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom:100px;
-  background-color: #eeeeee;
-
+  background-color: #ffffff;
 
 }
 
@@ -271,9 +271,9 @@ max-height:10%;
 
 .picture2 {
 background-image: url("../img/468839587_super.jpg");
-padding-top: 30px;
 background-attachment: fixed;
 background-position: center;
+margin-bottom: 50px;
 background-size: cover;
 height: 50vh;
 min-height: 100px;
@@ -309,24 +309,27 @@ max-height:10%;
  {
   text-align: center;
   justify-content: center;
-  padding-left: 220px;
-  padding-right: 220px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin-bottom: auto;
-  background-color: #eeeeee;
+
+  padding-bottom: 10px;
+  padding-top: 5px;
+  background-color: #ffffff;
 
 }
 
 
 
 section {
-	padding: 105px 30px;
+	padding: 0px 30px;
+  background-color: #eeeeee;
 }
 
 
 img {
 	max-width: 100%;
+padding-bottom:0px;
+
+  }
+
 }
 
 
@@ -337,9 +340,6 @@ img {
 	grid-gap: 111px;
 }
 
-section {
-	padding: 105px 30px;
-}
 
 /* ----------------------------------------
 aboutus
@@ -440,33 +440,3 @@ Responsive styles
 		width: 90%;
 		margin: 0 auto 20px auto;
 	}
-
-
-
-
-
-  #boxes {
-    margin: 20px;
-  }
-
-  #boxes section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 5px;
-
-  }
-
-  section article,
-  section div {
-    width: 18%;
-    border: 1px solid #eeeeee;
-    padding:10px;
-  }
-
-
-
-
-  #ux {
-    background-color: #eeeeee;
-  }
