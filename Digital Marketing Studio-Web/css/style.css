@@ -43,10 +43,7 @@ section div {
   padding:10px;
 }
 
-.boring article,
-.boring div {
-  border: 1px solid #8E8E8E;
-}
+
 
 button {
   background-color: #007db8;
@@ -62,18 +59,4 @@ button {
 
 #ux {
   background-color: #eeeeee;
-}
-
-
-.selected {
-  border: 1px solid #FF31A0;
-}
-
-
-
-
-
-.goofy {
-  color: pink;
-  font-size: 80px;
 }
